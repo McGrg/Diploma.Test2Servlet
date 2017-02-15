@@ -21,7 +21,7 @@ public class DB {
         List<ConstructionSites> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM diploma.master.constructionsite;");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM diploma.constructionsite;");
         while (rs.next()) {
             ConstructionSites site = new ConstructionSites();
             site.setConssiteId(rs.getInt("cons_site_id"));

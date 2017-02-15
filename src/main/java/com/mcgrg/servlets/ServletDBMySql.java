@@ -24,14 +24,12 @@ public class ServletDBMySql extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         try {
             DB db = new DB();
-            if (db != null) {
                 List<ConstructionSites> sites = db.getSites();
                 String gson= new Gson().toJson(sites);
                 db.close();
                 PrintWriter out = response.getWriter();
                 out.println(gson);
                 out.close();
-            }
         } catch (Exception e) {
             String except = e.toString();
             response.getWriter().write(except);

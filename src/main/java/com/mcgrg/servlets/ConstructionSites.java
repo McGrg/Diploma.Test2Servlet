@@ -70,7 +70,7 @@ public class ConstructionSites {
 
     @Override
     public String toString() {
-        return "ID: " + this.getConssiteId() + " " +  this.getConssiteCity().toString() + " "
+        return "ID: " + this.getConssiteId() + " " + this.getConssiteCity() + " "
                 + this.getConssiteStreet().toString() + " " + this.getConssiteBilding() + " "
                 + this.getStartDate() + " " + this.getFinishDate() + " " + this.getManager();
     }

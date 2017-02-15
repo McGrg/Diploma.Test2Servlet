@@ -13,8 +13,8 @@ public class sqlquerymysql {
     private static String stringPassword = "MySQLpassword";
     private static Connection con;
 
-    public static Connection sqlDrive() throws ClassNotFoundException, SQLException,IllegalAccessException, InstantiationException {
-        Class.forName("com.mysql.JDBC.Driver").newInstance();
+    public static Connection sqlDrive() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.jdbc.Driver");
         con = DriverManager.getConnection(stringDriver, stringUser, stringPassword);
         if (con == null) return null;
         return con;
