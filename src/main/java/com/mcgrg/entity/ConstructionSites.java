@@ -1,4 +1,4 @@
-package com.mcgrg.servlets;
+package com.mcgrg.entity;
 
 /**
  * Created by MSI GT70 on 15.02.2017.

@@ -1,5 +1,9 @@
 package com.mcgrg.servlets;
 
+import com.mcgrg.driver.sqlquerymysql;
+import com.mcgrg.entity.ConstructionSites;
+import com.mcgrg.entity.Usergroups;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -32,6 +36,22 @@ public class DB {
             site.setFinishDate(rs.getString("finish_date"));
             site.setManager(rs.getString("manager"));
             list.add(site);
+        }
+        rs.close();
+        stmt.close();
+        return list;
+    }
+
+    public List<Usergroups> getUsergroups() throws SQLException{
+        List<Usergroups> list =null;
+        list = new LinkedList<>();
+        Statement stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery("SELECT * FROM diploma.usergroups;");
+        while (rs.next()){
+            Usergroups usergroups=new Usergroups();
+            usergroups.setUsergroupId(rs.getInt("usergroups_id"));
+            usergroups.setUsergroupName(rs.getString("usergroup_name"));
+            list.add(usergroups);
         }
         rs.close();
         stmt.close();

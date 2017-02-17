@@ -1,4 +1,4 @@
-package com.mcgrg.servlets;
+package com.mcgrg.driver;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,6 +1,7 @@
 package com.mcgrg.servlets;
 
 import com.google.gson.Gson;
+import com.mcgrg.entity.ConstructionSites;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,11 +26,17 @@ public class ServletDBMySql extends HttpServlet {
         try {
             DB db = new DB();
                 List<ConstructionSites> sites = db.getSites();
-                String gson= new Gson().toJson(sites);
+                String gsonsites= new Gson().toJson(sites);
                 db.close();
-                PrintWriter out = response.getWriter();
-                out.println(gson);
-                out.close();
+                PrintWriter outsites = response.getWriter();
+                outsites.println(gsonsites);
+                outsites.close();
+//            List<Usergroups> usergroups = db.getUsergroups();
+//            String gsonusergroups = new Gson().toJson(usergroups);
+//            db.close();
+//            PrintWriter outusergroups = response.getWriter();
+//            outusergroups.println(gsonusergroups);
+//            outusergroups.close();
         } catch (Exception e) {
             String except = e.toString();
             response.getWriter().write(except);
