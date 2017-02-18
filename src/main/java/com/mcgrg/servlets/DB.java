@@ -2,6 +2,7 @@ package com.mcgrg.servlets;
 
 import com.mcgrg.driver.sqlquerymysql;
 import com.mcgrg.entity.ConstructionSites;
+import com.mcgrg.entity.Materials;
 import com.mcgrg.entity.Usergroups;
 
 import java.sql.Connection;
@@ -25,7 +26,8 @@ public class DB {
         List<ConstructionSites> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery("SELECT * FROM diploma.constructionsite;");
+        String sqlquery = "SELECT * FROM diploma.constructionsite;";
+        ResultSet rs = stmt.executeQuery(sqlquery);
         while (rs.next()) {
             ConstructionSites site = new ConstructionSites();
             site.setConssiteId(rs.getInt("cons_site_id"));
@@ -57,6 +59,23 @@ public class DB {
         stmt.close();
         return list;
     }
+
+    public List<Materials> getMaterials(String stringSQL) throws SQLException{
+        List<Materials> list =null;
+        list = new LinkedList<>();
+        Statement stmt = con.createStatement();
+        ResultSet rs = stmt.executeQuery(stringSQL);
+        while (rs.next()){
+            Materials materials =new Materials();
+            materials.setMaterialsId(rs.getInt("Materials_ID"));
+            materials.setMaterialsName(rs.getString("materials_name"));
+            list.add(materials);
+        }
+        rs.close();
+        stmt.close();
+        return list;
+    }
+
 
     public void close()throws SQLException{
         con.close();
