@@ -60,6 +60,14 @@ public class DB {
         return list;
     }
 
+    public String setUsergroups(String stringSQL) throws SQLException{
+        Statement stmt = con.createStatement();
+        stmt.executeUpdate(stringSQL);
+        stmt.close();
+        return "Inserting is successful!";
+    }
+
+
     public List<Materials> getMaterials(String stringSQL) throws SQLException{
         List<Materials> list =null;
         list = new LinkedList<>();

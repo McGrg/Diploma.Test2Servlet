@@ -21,12 +21,12 @@ public class ServletDBMySql extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         String[] stringSQL=null;
+        String[] tableName = null;
         Map<String, String[]> map = request.getParameterMap();
         //Reading the Map
         //Works for GET && POST Method
-        for(String paramName:map.keySet()) {
-            stringSQL = map.get(paramName);
-        }
+        stringSQL = map.get("sql");
+        tableName = map.get("table");
         try {
             DB db = new DB();
             List<Materials> sites = db.getMaterials(stringSQL[0]);
@@ -44,4 +44,6 @@ public class ServletDBMySql extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+
+//    INSERT INTO `diploma`.`usergroups` (`usergroup_name`) VALUES ('Пользователь');
 }
