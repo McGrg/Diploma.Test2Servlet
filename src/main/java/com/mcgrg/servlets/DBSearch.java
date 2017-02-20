@@ -1,7 +1,7 @@
 package com.mcgrg.servlets;
 
 import com.mcgrg.driver.sqlquerymysql;
-import com.mcgrg.entity.ConstructionSites;
+import com.mcgrg.entity.ConstructionSite;
 import com.mcgrg.entity.Materials;
 import com.mcgrg.entity.Usergroups;
 
@@ -15,21 +15,20 @@ import java.util.List;
 /**
  * Created by MSI GT70 on 15.02.2017.
  */
-public class DB {
+public class DBSearch {
     private Connection con = null;
 
-    public DB() throws SQLException, ClassNotFoundException, IllegalAccessException, InstantiationException {
+    public DBSearch() throws SQLException, ClassNotFoundException, IllegalAccessException, InstantiationException {
         con = sqlquerymysql.sqlDrive();
     }
 
-    public List<ConstructionSites> getSites() throws SQLException{
-        List<ConstructionSites> list = null;
+    public List<ConstructionSite> getSites(String stringSQL) throws SQLException{
+        List<ConstructionSite> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
-        String sqlquery = "SELECT * FROM diploma.constructionsite;";
-        ResultSet rs = stmt.executeQuery(sqlquery);
+        ResultSet rs = stmt.executeQuery(stringSQL);
         while (rs.next()) {
-            ConstructionSites site = new ConstructionSites();
+            ConstructionSite site = new ConstructionSite();
             site.setConssiteId(rs.getInt("cons_site_id"));
             site.setConssiteCity(rs.getString("cons_site_city"));
             site.setConssiteStreet(rs.getString("cons_site_street"));
@@ -58,13 +57,6 @@ public class DB {
         rs.close();
         stmt.close();
         return list;
-    }
-
-    public String setUsergroups(String stringSQL) throws SQLException{
-        Statement stmt = con.createStatement();
-        stmt.executeUpdate(stringSQL);
-        stmt.close();
-        return "Inserting is successful!";
     }
 
 
