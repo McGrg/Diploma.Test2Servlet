@@ -3,6 +3,7 @@ package com.mcgrg.servlets;
 import com.google.gson.Gson;
 import com.mcgrg.entity.ConstructionSite;
 import com.mcgrg.entity.Materials;
+import com.mcgrg.entity.Users;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -72,8 +73,11 @@ public class ServletDBMySql extends HttpServlet {
                 }
                 break;
                 case "users": {
-                    report = " users table!";
+                    List<Users> users = db.getUsers(stringSQL[0]);
+                    report = new Gson().toJson(users);
+                    db.close();
                 }
+                break;
                 default: {
                     report = " There isn't such a table!";
                 }
@@ -82,8 +86,9 @@ public class ServletDBMySql extends HttpServlet {
         } catch (Exception e) {
             report = e.toString();
         } finally {
+//            report = report + "tableName: " + tableName + "stringSQL: " + stringSQL;
             PrintWriter outsites = response.getWriter();
-            outsites.println(report);
+            outsites.println( report);
             outsites.close();
         }
 
