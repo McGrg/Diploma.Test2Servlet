@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by MSI GT70 on 23.02.2017.
  */
-public class Operations {
+public class Operations implements DataBaseEntity {
     private int operationsId;
     private int operationsType;
     private Date operationsDate;
@@ -59,5 +59,12 @@ public class Operations {
 
     public void setOperationsMaterialsAmount(float operationsMaterialsAmount) {
         this.operationsMaterialsAmount = operationsMaterialsAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + getOperationsId() + " " + getOperationsType() + " "
+                + getOperationsDate().toString() + " " + getOperationsSiteId() + " "
+                + getOperationsMaterials() + " " + getOperationsMaterialsAmount();
     }
 }

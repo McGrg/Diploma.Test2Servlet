@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 22.02.2017.
  */
-public class Authentifikation {
+public class Authentifikation implements DataBaseEntity {
     private int authentifikation_id;
     private String authentifikation_name;
     private String authentifikation_password;
@@ -30,5 +30,11 @@ public class Authentifikation {
 
     public void setAuthentifikation_password(String authentifikation_password) {
         this.authentifikation_password = authentifikation_password;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + getAuthentifikation_id() + " " +  getAuthentifikation_name() + " "
+                + getAuthentifikation_password();
     }
 }

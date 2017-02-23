@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 23.02.2017.
  */
-public class Opertype {
+public class Opertype implements DataBaseEntity {
     private int operTypeId;
     private int operTypeName;
 
@@ -21,5 +21,10 @@ public class Opertype {
 
     public void setOperTypeName(int operTypeName) {
         this.operTypeName = operTypeName;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + getOperTypeId() + " " + getOperTypeName();
     }
 }

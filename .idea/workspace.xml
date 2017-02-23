@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d4dbe02-6645-4075-b182-50359b9823d7" name="Default" comment="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBOneItemSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/SelectOneItemServlet.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/ConstructionSite.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Test3Servlet/WEB-INF/classes/com/mcgrg/servlets/ServletDBMySql.class" afterPath="$PROJECT_DIR$/target/Test3Servlet/WEB-INF/classes/com/mcgrg/servlets/ServletDBMySql.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mcgrg/servlets/ServletDBMySql.class" afterPath="$PROJECT_DIR$/target/classes/com/mcgrg/servlets/ServletDBMySql.class" />
+    <list default="true" id="1d4dbe02-6645-4075-b182-50359b9823d7" name="Default" comment="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity.&#10;Added all of Entities 23.02.2017">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/DataBaseEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/InputServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/InputServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/driver/sqlquerymssql.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymssql.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/driver/sqlquerymysql.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymysql.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/Materials.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/Usergroups.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/Users.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/DBInsert.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBInsert.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/DBSearch.java" afterPath="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,13 +77,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBSearch.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServletDBMySql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBSearch.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
               <folding>
-                <marker date="1487866988216" expanded="true" signature="1741:1773" ph="SELECT * FRO... usergroups" />
+                <element signature="imports" expanded="true" />
+                <marker date="1487877921637" expanded="true" signature="1627:1659" ph="SELECT * FRO... usergroups" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+              <folding>
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,172 +118,8 @@
       <file leaf-file-name="sqlquerymysql.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymysql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Debitstandart.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#928#929#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1036#1037#0" expanded="true" />
-                <element signature="e#1096#1097#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-              <folding>
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1070#1071#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1155#1156#0" expanded="true" />
-                <element signature="e#1222#1223#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Opertype.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-              <folding>
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stock.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#607#608#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1054#1055#0" expanded="true" />
-                <element signature="e#1100#1101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usergroups.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#131#132#0" expanded="false" />
-                <element signature="e#165#166#0" expanded="false" />
-                <element signature="e#216#217#0" expanded="false" />
-                <element signature="e#262#263#0" expanded="false" />
-                <element signature="e#302#303#0" expanded="false" />
-                <element signature="e#338#339#0" expanded="false" />
-                <element signature="e#396#397#0" expanded="false" />
-                <element signature="e#446#447#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Materials.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#194#195#0" expanded="false" />
-                <element signature="e#228#229#0" expanded="false" />
-                <element signature="e#279#280#0" expanded="false" />
-                <element signature="e#325#326#0" expanded="false" />
-                <element signature="e#365#366#0" expanded="false" />
-                <element signature="e#401#402#0" expanded="false" />
-                <element signature="e#459#460#0" expanded="false" />
-                <element signature="e#509#510#0" expanded="false" />
-                <element signature="e#555#556#0" expanded="false" />
-                <element signature="e#633#634#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructionSite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Authentifikation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="323">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -277,6 +131,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -284,7 +139,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="InputServlet" />
+        <entry key="$PROJECT_DIR$" value="AllOfEntities" />
       </map>
     </option>
   </component>
@@ -309,7 +164,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/Materials.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/DB.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/ConstructionSites.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/DBInsert.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/InputServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/entity/Authntifikation.java" />
@@ -320,15 +174,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/sqlquerymysql.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/DBSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBInsert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBOneItemSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymssql.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymysql.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/DataBaseEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java" />
       </list>
     </option>
   </component>
@@ -434,6 +294,18 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcgrg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servlets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -457,7 +329,49 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcgrg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test3Servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test3Servlet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mcgrg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataBaseDrivers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -993,7 +907,7 @@
       <workItem from="1487862993052" duration="2147000" />
       <workItem from="1487865606673" duration="351000" />
       <workItem from="1487865973231" duration="1014000" />
-      <workItem from="1487867363892" duration="913000" />
+      <workItem from="1487867363892" duration="9517000" />
     </task>
     <task id="LOCAL-00001" summary="It's working son of a bitch!!! Included ms&amp;my sql. Gson.">
       <created>1487189209880</created>
@@ -1044,11 +958,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487703898977</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity.&#10;Added all of Entities 23.02.2017">
+      <created>1487868306760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1487868306760</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78316000" />
+    <option name="totallyTimeSpent" value="86920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1078,15 +999,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.69189763" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23111111" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18777777" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12" sideWeight="0.55444443" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21777777" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50333333" sideWeight="0.55444443" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13363029" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12953092" sideWeight="0.8153215" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12953092" sideWeight="0.18467852" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.81392044" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17004265" sideWeight="0.18607955" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1094,7 +1016,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22383073" sideWeight="0.4307036" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23111111" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1130,10 +1051,13 @@
     <MESSAGE value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate" />
     <MESSAGE value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!" />
     <MESSAGE value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity." />
-    <option name="LAST_COMMIT_MESSAGE" value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity." />
+    <MESSAGE value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity.&#10;Added all of Entities 23.02.2017" />
+    <option name="LAST_COMMIT_MESSAGE" value="It's working son of a bitch!!! Included ms&amp;my sql. Gson.&#10;Added Users, Usergroups entity. Materials entity, parametr map.&#10;InputServlet, executeUpdate,it's successfully sent data to DecktopApp!!!&#10;Added users entity.&#10;Added all of Entities 23.02.2017" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1141,23 +1065,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymssql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="65" lean-forward="true" selection-start-line="27" selection-start-column="65" selection-end-line="27" selection-end-column="65" />
-          <folding>
-            <marker date="1487866988216" expanded="true" signature="1741:1773" ph="SELECT * FRO... usergroups" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1178,9 +1085,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1094,8 @@
         <state relative-caret-position="187">
           <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
-            <marker date="1487866988216" expanded="true" signature="1741:1773" ph="SELECT * FRO... usergroups" />
+            <element signature="imports" expanded="true" />
+            <marker date="1487877921637" expanded="true" signature="1627:1659" ph="SELECT * FRO... usergroups" />
           </folding>
         </state>
       </provider>
@@ -1205,7 +1111,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1229,9 +1138,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,38 +1251,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test3Servlet.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/InputServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
-          <caret line="99" column="5" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="99" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1536,16 +1415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/SelectOneItemServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/modules.uml" />
     <entry file="uml://JAVA/com.mcgrg.entity">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1696,31 +1565,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java">
+    <entry file="uml://JAVA/com.mcgrg.Entity">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.mcgrg.Entity</OriginalElement>
+          <nodes>
+            <node x="" y="">com.mcgrg.Entity.Materials</node>
+            <node x="" y="">com.mcgrg.Entity.Usergroups</node>
+            <node x="" y="">com.mcgrg.Entity.Users</node>
+            <node x="" y="">com.mcgrg.Entity.Debitstandart</node>
+            <node x="" y="">com.mcgrg.Entity.Authentifikation</node>
+            <node x="" y="">com.mcgrg.Entity.Stock</node>
+            <node x="" y="">com.mcgrg.Entity.Opertype</node>
+            <node x="" y="">com.mcgrg.Entity.ConstructionSite</node>
+            <node x="" y="">com.mcgrg.Entity.Operations</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="146.0" y="125.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/InputServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="96" column="13" lean-forward="false" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/SelectOneItemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" lean-forward="false" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
           <folding>
-            <element signature="e#121#122#0" expanded="false" />
-            <element signature="e#150#151#0" expanded="false" />
-            <element signature="e#191#192#0" expanded="false" />
-            <element signature="e#227#228#0" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#293#294#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#453#454#0" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#553#554#0" expanded="false" />
-            <element signature="e#593#594#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-            <element signature="e#687#688#0" expanded="false" />
-            <element signature="e#737#738#0" expanded="false" />
-            <element signature="e#772#773#0" expanded="false" />
-            <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#851#852#0" expanded="false" />
-            <element signature="e#891#892#0" expanded="false" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#630#631#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/DataBaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+          <folding>
+            <element signature="method#setOperationsMaterialsAmount#0;class#Operations#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1728,16 +1647,17 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Usergroups.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="44" lean-forward="false" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
           <folding>
-            <element signature="e#131#132#0" expanded="false" />
-            <element signature="e#165#166#0" expanded="false" />
-            <element signature="e#216#217#0" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#338#339#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-            <element signature="e#446#447#0" expanded="false" />
+            <element signature="method#toString#0;class#Stock#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1745,148 +1665,76 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Materials.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#194#195#0" expanded="false" />
-            <element signature="e#228#229#0" expanded="false" />
-            <element signature="e#279#280#0" expanded="false" />
-            <element signature="e#325#326#0" expanded="false" />
-            <element signature="e#365#366#0" expanded="false" />
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#459#460#0" expanded="false" />
-            <element signature="e#509#510#0" expanded="false" />
-            <element signature="e#555#556#0" expanded="false" />
-            <element signature="e#633#634#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Authentifikation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/ConstructionSite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
-            <marker date="1487866988216" expanded="true" signature="1741:1773" ph="SELECT * FRO... usergroups" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymysql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Debitstandart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="85">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="52" />
           <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="method#setDebitStandartMaterials#0;class#Debitstandart#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Operations.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="335">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/sqlquerymysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/servlets/ServletDBMySql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
           <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Users.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+          <folding>
+            <element signature="e#367#368#0" expanded="true" />
             <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Opertype.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/DataBaseDrivers/DBSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="280">
+          <caret line="85" column="46" lean-forward="true" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="46" />
           <folding>
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mcgrg/Entity/Stock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#740#741#0" expanded="true" />
-            <element signature="e#781#782#0" expanded="true" />
-            <element signature="e#819#820#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1487877921637" expanded="true" signature="1627:1659" ph="SELECT * FRO... usergroups" />
           </folding>
         </state>
       </provider>
@@ -1949,7 +1797,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.1979798" />
+                <option value="0.32020202" />
                 <option value="0.6" />
               </list>
             </option>
@@ -1962,7 +1810,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.32020202" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 23.02.2017.
  */
-public class Debitstandart {
+public class Debitstandart implements DataBaseEntity {
     private int debitStandartID;
     private int debitStandartSiteID;
     private int debitStandartMaterials;
@@ -39,5 +39,11 @@ public class Debitstandart {
 
     public void setDebitStandartValue(float debitStandartValue) {
         this.debitStandartValue = debitStandartValue;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " +getDebitStandartID() + " " +  getDebitStandartSiteID() + " " +
+        getDebitStandartMaterials() + " " + getDebitStandartValue();
     }
 }

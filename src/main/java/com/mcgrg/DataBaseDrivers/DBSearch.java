@@ -1,9 +1,6 @@
 package com.mcgrg.DataBaseDrivers;
 
-import com.mcgrg.Entity.ConstructionSite;
-import com.mcgrg.Entity.Materials;
-import com.mcgrg.Entity.Usergroups;
-import com.mcgrg.Entity.Users;
+import com.mcgrg.Entity.*;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -22,7 +19,7 @@ public class DBSearch {
         con = sqlquerymysql.sqlDrive();
     }
 
-    public List<ConstructionSite> getSites(String stringSQL) throws SQLException{
+    public List<ConstructionSite> getSites(String stringSQL) throws SQLException {
         List<ConstructionSite> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
@@ -43,13 +40,13 @@ public class DBSearch {
         return list;
     }
 
-    public List<Usergroups> getUsergroups() throws SQLException{
-        List<Usergroups> list =null;
+    public List<Usergroups> getUsergroups() throws SQLException {
+        List<Usergroups> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM diploma.usergroups;");
-        while (rs.next()){
-            Usergroups usergroups=new Usergroups();
+        while (rs.next()) {
+            Usergroups usergroups = new Usergroups();
             usergroups.setUsergroupId(rs.getInt("usergroups_id"));
             usergroups.setUsergroupName(rs.getString("usergroup_name"));
             list.add(usergroups);
@@ -60,13 +57,13 @@ public class DBSearch {
     }
 
 
-    public List<Materials> getMaterials(String stringSQL) throws SQLException{
-        List<Materials> list =null;
+    public List<Materials> getMaterials(String stringSQL) throws SQLException {
+        List<Materials> list = null;
         list = new LinkedList<>();
         Statement stmt = con.createStatement();
         ResultSet rs = stmt.executeQuery(stringSQL);
-        while (rs.next()){
-            Materials materials =new Materials();
+        while (rs.next()) {
+            Materials materials = new Materials();
             materials.setMaterialsId(rs.getInt("Materials_ID"));
             materials.setMaterialsName(rs.getString("materials_name"));
             list.add(materials);
@@ -76,27 +73,41 @@ public class DBSearch {
         return list;
     }
 
-    public List<Users> getUsers (String stringSQL) throws SQLException{
-        List<Users> list =null;
+    public String getUsers(String stringSQL) {
+        String report = " Inside ";
+        List<Users> list = null;
         list = new LinkedList<>();
-        Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery(stringSQL);
-        while (rs.next()){
-            Users users =new Users();
-            users.setUserID(rs.getInt("users_id"));
-            users.setUserName(rs.getString("users_name"));
-            users.setUserSurname(rs.getString("users_surname"));
-            users.setUserThirdname(rs.getString("users_thirdname"));
-            users.setPosition(rs.getString("users_position"));
-            list.add(users);
+        try {
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery(stringSQL);
+            while (rs.next()) {
+
+                try {
+                    Users users = new Users();
+                    report = report + " users 3 ";
+                    users.setUserID(rs.getInt("users_id"));
+                    users.setUserName(rs.getString("users_name"));
+                    users.setUserSurname(rs.getString("users_surname"));
+                    users.setUserThirdname(rs.getString("users_thirdname"));
+                    users.setPosition(rs.getString("users_position"));
+                    list.add(users);
+                } catch (SQLException e) {
+                    report = report + " Error: " + e.toString();
+                }
+            }
+            rs.close();
+            stmt.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        rs.close();
-        stmt.close();
-        return list;
+        finally {
+            return report;
+        }
+//        return list;
     }
 
 
-    public void close()throws SQLException{
+    public void close() throws SQLException {
         con.close();
     }
 }

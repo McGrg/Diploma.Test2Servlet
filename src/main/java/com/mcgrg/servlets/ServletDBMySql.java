@@ -4,7 +4,6 @@ import com.google.gson.Gson;
 import com.mcgrg.DataBaseDrivers.DBSearch;
 import com.mcgrg.Entity.ConstructionSite;
 import com.mcgrg.Entity.Materials;
-import com.mcgrg.Entity.Users;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,17 +24,19 @@ public class ServletDBMySql extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         String[] stringSQL = null;
         String[] tableName = null;
-        String report = null;
+        String report = "Точка входа ";
         Map<String, String[]> map = request.getParameterMap();
         //Reading the Map
         //Works for GET && POST Method
         stringSQL = map.get("sql");
         tableName = map.get("table");
+//        report = stringSQL[0] + " " + tableName[0] + " ";
 
         //--------------------------------------------------------------
 
         try {
             DBSearch db = new DBSearch();
+            report =report + stringSQL[0] + " " + tableName[0] + " ";
             switch (tableName[0]) {
                 case "authentifikation": {
                     report = " authentifikation table!";
@@ -74,8 +75,10 @@ public class ServletDBMySql extends HttpServlet {
                 }
                 break;
                 case "users": {
-                    List<Users> users = db.getUsers(stringSQL[0]);
-                    report = new Gson().toJson(users);
+//                    List<Users> users = db.getUsers(stringSQL[0]);
+//                    report = new Gson().toJson(users);
+                    report = report + db.getUsers(stringSQL[0]);
+                    report = report + "Successfull";
                     db.close();
                 }
                 break;

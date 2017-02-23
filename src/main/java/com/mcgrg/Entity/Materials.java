@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 18.02.2017.
  */
-public class Materials {
+public class Materials implements DataBaseEntity {
     private int materialsId;
     private String materialsName;
 

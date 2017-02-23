@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 23.02.2017.
  */
-public class Stock {
+public class Stock implements DataBaseEntity {
     private int stockId;
     private int stockMaterials;
     private float stockAmount;
@@ -48,5 +48,11 @@ public class Stock {
 
     public void setStockSiteId(int stockSiteId) {
         this.stockSiteId = stockSiteId;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + getStockId() + " : " +  getStockMaterials() + " " + getStockAmount() + " "
+                + getStockAmountNeed() + " " + getStockSiteId();
     }
 }

@@ -3,7 +3,7 @@ package com.mcgrg.Entity;
 /**
  * Created by MSI GT70 on 15.02.2017.
  */
-public class ConstructionSite {
+public class ConstructionSite implements DataBaseEntity {
     private int conssiteId;
     private String conssiteCity;
     private String conssiteStreet;
@@ -12,7 +12,7 @@ public class ConstructionSite {
     private String finishDate;
     private String manager;
 
-    public int getConssiteId() {
+    public int getConssiteId()  {
         return conssiteId;
     }
 
@@ -70,8 +70,8 @@ public class ConstructionSite {
 
     @Override
     public String toString() {
-        return "ID: " + this.getConssiteId() + " " + this.getConssiteCity() + " "
-                + this.getConssiteStreet().toString() + " " + this.getConssiteBilding() + " "
-                + this.getStartDate() + " " + this.getFinishDate() + " " + this.getManager();
+        return "ID: " + getConssiteId() + " " + getConssiteCity() + " "
+                + getConssiteStreet() + " " + getConssiteBilding() + " "
+                + getStartDate() + " " + getFinishDate() + " " + getManager();
     }
 }
