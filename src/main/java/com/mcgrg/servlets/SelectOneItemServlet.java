@@ -1,7 +1,7 @@
 package com.mcgrg.servlets;
 
 import com.google.gson.Gson;
-import com.mcgrg.DataBaseDrivers.DBSearch;
+import com.mcgrg.DataBaseDrivers.DBOneItemSearch;
 import com.mcgrg.Entity.ConstructionSite;
 import com.mcgrg.Entity.Materials;
 import com.mcgrg.Entity.Users;
@@ -13,14 +13,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import java.util.Map;
 
 /**
- * Created by MSI GT70 on 14.02.2017.
+ * Created by MSI GT70 on 22.02.2017.
  */
-@WebServlet("/ServletDBMySql")
-public class ServletDBMySql extends HttpServlet {
+@WebServlet("/SelectOneItemServlet")
+public class SelectOneItemServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setCharacterEncoding("UTF-8");
         String[] stringSQL = null;
@@ -35,14 +34,14 @@ public class ServletDBMySql extends HttpServlet {
         //--------------------------------------------------------------
 
         try {
-            DBSearch db = new DBSearch();
+            DBOneItemSearch db = new DBOneItemSearch();
             switch (tableName[0]) {
                 case "authentifikation": {
                     report = " authentifikation table!";
                 }
                 break;
                 case "constructionsite": {
-                    List<ConstructionSite> sites = db.getSites(stringSQL[0]);
+                    ConstructionSite sites = db.getSites(stringSQL[0]);
                     report = new Gson().toJson(sites);
                     db.close();
                 }
@@ -52,7 +51,7 @@ public class ServletDBMySql extends HttpServlet {
                 }
                 break;
                 case "materials": {
-                    List<Materials> sites = db.getMaterials(stringSQL[0]);
+                    Materials sites = db.getMaterials(stringSQL[0]);
                     report = new Gson().toJson(sites);
                     db.close();
                 }
@@ -74,7 +73,7 @@ public class ServletDBMySql extends HttpServlet {
                 }
                 break;
                 case "users": {
-                    List<Users> users = db.getUsers(stringSQL[0]);
+                    Users users = db.getUsers(stringSQL[0]);
                     report = new Gson().toJson(users);
                     db.close();
                 }

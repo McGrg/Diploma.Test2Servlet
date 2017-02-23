@@ -1,6 +1,4 @@
-package com.mcgrg.servlets;
-
-import com.mcgrg.driver.sqlquerymysql;
+package com.mcgrg.DataBaseDrivers;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,12 +14,13 @@ public class DBInsert {
         con = sqlquerymysql.sqlDrive();
     }
 
-    public String setUsergroups(String stringSQL) throws SQLException{
+    public String setData(String stringSQL) throws SQLException{
         Statement stmt = con.createStatement();
         stmt.executeUpdate(stringSQL);
         stmt.close();
         return "Inserting is successful!";
     }
+
 
     public void close()throws SQLException{
         con.close();

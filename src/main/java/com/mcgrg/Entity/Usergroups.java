@@ -1,4 +1,4 @@
-package com.mcgrg.entity;
+package com.mcgrg.Entity;
 
 /**
  * Created by MSI GT70 on 17.02.2017.

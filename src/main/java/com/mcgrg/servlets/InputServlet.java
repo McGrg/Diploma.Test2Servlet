@@ -1,5 +1,7 @@
 package com.mcgrg.servlets;
 
+import com.mcgrg.DataBaseDrivers.DBInsert;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -28,72 +30,70 @@ public class InputServlet extends HttpServlet {
 
         try {
             DBInsert db = new DBInsert();
-            switch (tableName[0]) {
-                case "authentifikation": {
-                    report = report + " authentifikation table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "constructionsite": {
-                    report = report + " constructionsite table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "debitstandart": {
-                    report = report + " debitstandart table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "materials": {
-                    report = report + " materials table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "operations": {
-                    report = report + " operations table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "opertype": {
-                    report = report + " opertype table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                break;
-                case "stock": {
-                    report = report + " stock table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                case "usergroups": {
-                    report = db.setUsergroups(stringSQL[0]);
-                }
-                break;
-                case "users": {
-                    report = report + " users table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-                default: {
-                    report = report + " There isn't such a table!";
-                    PrintWriter outsites = response.getWriter();
-                    outsites.println(report);
-                    outsites.close();
-                }
-            }
+//            switch (tableName[0]) {
+//                case "authentifikation": {
+                    report = db.setData(stringSQL[0]);
+//                }
+//                break;
+//                case "constructionsite": {
+//                    report = report + " constructionsite table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                case "debitstandart": {
+//                    report = report + " debitstandart table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                case "materials": {
+//                    report = report + " materials table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                case "operations": {
+//                    report = report + " operations table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                case "opertype": {
+//                    report = report + " opertype table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                case "stock": {
+//                    report = report + " stock table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                case "usergroups": {
+//                    report = db.setUsergroups(stringSQL[0]);
+//                }
+//                break;
+//                case "users": {
+//                    report = report + " users table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//                break;
+//                default: {
+//                    report = report + " There isn't such a table!";
+//                    PrintWriter outsites = response.getWriter();
+//                    outsites.println(report);
+//                    outsites.close();
+//                }
+//            }
             if (db != null) {
                 db.close();
             }

@@ -1,10 +1,9 @@
-package com.mcgrg.servlets;
+package com.mcgrg.DataBaseDrivers;
 
-import com.mcgrg.driver.sqlquerymysql;
-import com.mcgrg.entity.ConstructionSite;
-import com.mcgrg.entity.Materials;
-import com.mcgrg.entity.Usergroups;
-import com.mcgrg.entity.Users;
+import com.mcgrg.Entity.ConstructionSite;
+import com.mcgrg.Entity.Materials;
+import com.mcgrg.Entity.Usergroups;
+import com.mcgrg.Entity.Users;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
